@@ -15,9 +15,9 @@ a { color:inherit; }
 .hero-copy { position:relative; z-index:3; align-self:start; }
 .eyebrow,.roman,.section-en,.section-number,.role,.scroll-cue { font-family:Oswald,sans-serif; letter-spacing:.22em; }
 .eyebrow { margin:0 0 10px; font-size:.64rem; color:var(--red); }
-h1 { margin:0; font-size:clamp(5.1rem,23vw,9rem); line-height:.83; font-weight:900; letter-spacing:-.14em; position:absolute; top:2.5rem; left:-.18em; display:flex; width:max-content; transform:rotate(-7deg); transform-origin:left center; }
+h1 { margin:0; font-size:clamp(5.4rem,25vw,9rem); line-height:.78; font-weight:900; letter-spacing:-.08em; position:absolute; top:2.5rem; left:-.18em; display:flex; flex-direction:column; width:max-content; }
 h1 span { display:block; }
-h1 span:last-child { margin-left:-.08em; transform:translateY(.34em) rotate(11deg); }
+h1 span:last-child { margin-top:.08em; }
 .roman { margin:0 0 0 clamp(5.2rem,25vw,9rem); font-size:clamp(1.2rem,5vw,2rem); font-weight:600; writing-mode:vertical-rl; }
 .role { margin:2.1rem 0 0 clamp(4.9rem,24vw,8.5rem); font-size:.7rem; writing-mode:vertical-rl; }
 .hero-visual { position:absolute; z-index:1; top:17%; right:-7%; width:78%; height:62%; background:#d2cec7; overflow:hidden; }
