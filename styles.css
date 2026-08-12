@@ -22,6 +22,8 @@ a { color:inherit; }
 .schedule-details div { display:grid; grid-template-columns:58px 1fr; gap:18px; padding:17px 0; border-bottom:1px solid rgba(255,255,255,.22); }
 .schedule-details dt { color:var(--red); font-size:.66rem; letter-spacing:.18em; }
 .schedule-details dd { margin:0; font-size:.9rem; line-height:1.7; letter-spacing:.06em; }
+.schedule-details dd strong { color:var(--paper); font-family:Oswald,sans-serif; font-size:1.06em; letter-spacing:.08em; }
+.schedule-details .event-time dd { line-height:2; }
 .schedule-details dd span { display:inline-grid; place-items:center; width:1.55em; height:1.55em; border:1px solid var(--red); border-radius:50%; color:var(--red); font-size:.7em; }
 .schedule-note { margin:18px 0 0; color:#99948e; font-size:.64rem; line-height:1.7; letter-spacing:.04em; }
 .schedule-poster { margin:0 auto; width:min(100%,440px); box-shadow:0 20px 60px rgba(0,0,0,.42); transform:rotate(1.5deg); }
