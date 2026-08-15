@@ -69,6 +69,9 @@ h2 { margin:0; font-size:clamp(1.8rem,7.5vw,3.8rem); line-height:1.5; letter-spa
 .activity-no { font-family:Oswald,sans-serif; color:var(--red); font-size:.67rem; }
 .activity-list h3 { margin:0 0 7px; font-size:1.2rem; }
 .activity-list p { margin:0; color:#8d8984; font-family:Oswald,sans-serif; font-size:.56rem; letter-spacing:.16em; }
+.activity-list .activity-example { margin-top:12px; color:#aaa59f; font-family:inherit; font-size:.68rem; letter-spacing:.08em; }
+.activity-example a { color:var(--paper); text-underline-offset:4px; text-decoration-color:var(--red); }
+.activity-example a:hover,.activity-example a:focus-visible { color:var(--red); }
 .contact-links { margin-top:45px; }
 .contact-card { min-height:100px; display:grid; grid-template-columns:1fr auto; align-content:center; gap:9px 20px; border-top:1px solid var(--line); text-decoration:none; position:relative; transition:padding .2s,background .2s; }
 .contact-card:last-child { border-bottom:1px solid var(--line); }
