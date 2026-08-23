@@ -79,6 +79,8 @@ h2 { margin:0; font-size:clamp(1.8rem,7.5vw,3.8rem); line-height:1.5; letter-spa
 .works-content { position:relative; z-index:1; }
 .activity-list { list-style:none; margin:52px 0 0; padding:0; border-top:1px solid rgba(255,255,255,.2); }
 .activity-list li { display:grid; grid-template-columns:46px 1fr; align-items:center; gap:14px; padding:26px 0; border-bottom:1px solid rgba(255,255,255,.2); }
+.activity-list .application-activity { align-items:start; }
+.application-activity > .activity-no { margin-top:5px; }
 .activity-no { font-family:Oswald,sans-serif; color:var(--red); font-size:.67rem; }
 .activity-list h3 { margin:0 0 7px; font-size:1.2rem; }
 .activity-list p { margin:0; color:#8d8984; font-family:Oswald,sans-serif; font-size:.56rem; letter-spacing:.16em; }
