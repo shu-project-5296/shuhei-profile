@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0f1115"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>ココナラ小遣い稼ぎOS</title>
-<link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css?v=3">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <input id="authPassword" type="password" autocomplete="current-password" placeholder="パスワード（6文字以上）">
     <button class="primary" id="signInBtn">ログイン</button>
     <button id="signUpBtn">初回アカウント作成</button>
-    <button id="demoBtn">👀 デモを見る</button>
+    <button id="demoBtn" type="button">👀 デモを見る</button>
     <div id="authMsg" class="msg"></div>
   </div>
 </div>
@@ -36,5 +36,5 @@
 <label>納期<input id="dueDate" type="date"></label><label>最終連絡日<input id="lastContactDate" type="date"></label>
 <label class="full">次にやること<input id="nextAction"></label><label class="full">メモ<textarea id="memo"></textarea></label><label class="full">ココナラURL<input id="coconalaUrl" type="url"></label>
 </div><div class="form-actions"><button type="button" class="danger hidden" id="deleteBtn">削除</button><span></span><button type="button" id="cancelBtn">キャンセル</button><button type="submit" class="primary">保存</button></div></form></div></div>
-<script src="./app.js"></script>
+<script src="./app.js?v=3"></script>
 </body></html>
