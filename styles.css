@@ -90,6 +90,11 @@ h2 { margin:0; font-size:clamp(1.8rem,7.5vw,3.8rem); line-height:1.5; letter-spa
 .works-content { position:relative; z-index:1; }
 .activity-list { list-style:none; margin:52px 0 0; padding:0; border-top:1px solid rgba(255,255,255,.2); }
 .activity-list li { display:grid; grid-template-columns:46px 1fr; align-items:center; gap:14px; padding:26px 0; border-bottom:1px solid rgba(255,255,255,.2); }
+.activity-list .performance-activity { align-items:start; }
+.performance-activity > .activity-no { margin-top:5px; }
+.activity-past-performance { margin-top:18px; padding:0; background:transparent; }
+.activity-past-performance details { max-width:none; }
+.activity-past-performance .schedule { margin:0; padding:36px 0 48px; }
 .activity-list .application-activity { align-items:start; }
 .application-activity > .activity-no { margin-top:5px; }
 .activity-no { font-family:Oswald,sans-serif; color:var(--red); font-size:.67rem; }
