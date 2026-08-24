@@ -15,11 +15,12 @@
     <input id="authPassword" type="password" autocomplete="current-password" placeholder="パスワード（6文字以上）">
     <button class="primary" id="signInBtn">ログイン</button>
     <button id="signUpBtn">初回アカウント作成</button>
+    <button id="demoBtn">👀 デモを見る</button>
     <div id="authMsg" class="msg"></div>
   </div>
 </div>
 <div id="appView" class="hidden">
-<header><div><h1>ココナラ小遣い稼ぎOS</h1><div class="sub">クラウド案件管理</div></div><div class="head-actions"><button id="refreshBtn">↻</button><button class="primary" id="newBtn">＋ 新規</button></div></header>
+<header><div><h1>ココナラ小遣い稼ぎOS</h1><div class="sub" id="appSub">クラウド案件管理</div></div><div class="head-actions"><button id="refreshBtn">↻</button><button class="primary" id="newBtn">＋ 新規</button></div></header>
 <main>
   <section class="kpis"><div class="card"><span>進行中</span><b id="kActive">0</b></div><div class="card"><span>相談案件</span><b id="kConsult">0</b></div><div class="card"><span>売上見込</span><b id="kSales">¥0</b></div><div class="card"><span>手取り見込</span><b id="kNet">¥0</b></div></section>
   <section class="toolbar"><select id="filterStatus"><option value="">全ステータス</option><option>相談受付</option><option>要件整理</option><option>見積提示</option><option>購入済</option><option>開発中</option><option>テスト</option><option>修正</option><option>納品待ち</option><option>完了</option></select><input id="search" placeholder="顧客名・案件名で検索"><button id="logoutBtn">ログアウト</button></section>
