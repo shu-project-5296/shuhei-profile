@@ -1,14 +1,14 @@
 const SUPABASE_URL='https://cqhsvhbfeuaujmkiyuzh.supabase.co';
-const SUPABASE_KEY='__SUPABASE_PUBLISHABLE_KEY__';
+const SUPABASE_KEY='sb_publishable_fGdgSsziZzeNiMBMT6S_AA_WO0FaLuY';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 let cases=[];
 const $=id=>document.getElementById(id);
 const yen=n=>'¥'+Math.round(Number(n||0)).toLocaleString('ja-JP');
 const net=c=>Number(c.amount||0)*(1-Number(c.fee_rate||0)/100);
-const escapeHtml=(s='')=>String(s).replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#039;','"':'&quot;'}[m]));
+const escapeHtml=(s='')=>String(s).replace(/[&<>'\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#039;','\"':'&quot;'}[m]));
 function showAuth(){$('authView').classList.remove('hidden');$('appView').classList.add('hidden')}
 function showApp(){$('authView').classList.add('hidden');$('appView').classList.remove('hidden')}
-async function init(){if(SUPABASE_KEY.startsWith('__')){authMsg.textContent='クラウド接続設定を仕上げ中です。';showAuth();return;}const {data}=await sb.auth.getSession();if(data.session?.user){showApp();await loadCases()}else showAuth()}
+async function init(){const {data}=await sb.auth.getSession();if(data.session?.user){showApp();await loadCases()}else showAuth()}
 async function signIn(){authMsg.textContent='ログイン中…';const {error}=await sb.auth.signInWithPassword({email:authEmail.value.trim(),password:authPassword.value});if(error){authMsg.textContent=error.message;return}authMsg.textContent='';showApp();await loadCases()}
 async function signUp(){authMsg.textContent='アカウント作成中…';const {data,error}=await sb.auth.signUp({email:authEmail.value.trim(),password:authPassword.value});if(error){authMsg.textContent=error.message;return}if(data.session){showApp();await loadCases()}else authMsg.textContent='確認メールを確認後、ログインしてください。'}
 async function logout(){await sb.auth.signOut();cases=[];showAuth()}
