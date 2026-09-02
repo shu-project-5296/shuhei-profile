@@ -31,3 +31,7 @@ InstagramとYouTubeは、どちらも `@taikotofue.shu` への導線を設定済
 - `assets/shuhei-main.jpg` — 公開用の本人写真（要追加）
 
 メールアドレスは `taikouchi.shuhei@gmail.com` に設定済みです。
+
+## Google Analytics 4
+
+個人ホームページ用のGoogle tag（測定ID `G-FNFTEX8CK5`）を `index.html` の共通headへ設置しています。Measurement IDは公開情報ですが、GA4 Data API用のサービスアカウント鍵や秘密情報はこのリポジトリへ保存しないでください。
